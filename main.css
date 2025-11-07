@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.pageLayout{
+    font-family: Arial, sans-serif, Helvetica;
+    color: #222;
+    line-height: 1.5;
+}
+.parentBox{
+    display: block;
+    width: 100%;
+    font-family: Arial, sans-serif, Helvetica;
+    color: #222;
+    line-height: 1.5;
+}
+
+main{
+    background-color: #4f4f4f;
+    padding: 20px;
+    color: white;
+    gap: 20px;
+    text-align: justify;
+    font-size: small;
+    
+}
+
+main h1{
+    background-color: #2a2a2a;
+    color: white;
+    margin-block: 10px;
+    padding-block: 10px; 
+}
+
+.mainServices{
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); /* Content, sidebar*/
+    gap: 20px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    color: white;
+}
+
+.mainContent{
+    grid-column: 1; 
+    background-color: #4f4f4f;
+    padding: 15px;
+    font-size: small;
+}
+.mainAside{
+    grid-column: 2; 
+    background-color: #4f4f4f;
+    padding: 15px;
+    font-size: medium;
+}
+
+.asideTitle{
+    margin-bottom: 40px;
+}
+
+.asideContent{
+    display: grid;
+    font-size: medium;
+}
+
+#asideGardening{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#asideLandscaping{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#asideWeedControl{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#asideTreeRemoval{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.mainTitle img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-block: 20px;
+}
+
+nav {
+    padding: 32px 32px;
+    min-height: 80px;
+    background-color: #1F1F1F;
+}
+
+
+
+nav img {
+    max-height: 48px;
+    background-color: white;
+}
+
+.spacer {
+    /*border: 1px solid yellow;*/
+    display: inline-block;
+    /*Parent widtj - Logo width - menu <ul> width with no margin in the last child*/
+    width: calc(100% - 40px - 268px);
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: small;
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a.currant {
+    color: aqua;
+    font-weight: bold
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+nav ul li a:active{
+    color: green;
+}
+
+#services{
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 0px;
+    font-size: medium;
+    text-align: justify;
+}
+#gardening{
+    text-align: left;
+    margin-block: 20px;
+
+}
+
+#landscaping{
+    text-align: left;
+    margin-block: 20px;
+    
+}
+
+#weedControl{
+    text-align: left;
+    margin-block: 20px;
+    
+}
+
+#treeRemoval{
+    text-align: left;
+    margin-block: 20px;
+    
+}
+
+footer{
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+.copyFooter{
+margin-top: 20px;
+font-size: 10px;
+}

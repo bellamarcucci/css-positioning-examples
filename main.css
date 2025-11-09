@@ -19,6 +19,7 @@ html{
     font-family: Arial, sans-serif, Helvetica;
     color: #222;
     line-height: 1.5;
+    padding-bottom: 50px;
 }
 
 main{
@@ -28,14 +29,16 @@ main{
     gap: 20px;
     text-align: justify;
     font-size: small;
-    
+    padding-top: 100px;
 }
 
+
 main h1{
-    background-color: #2a2a2a;
+    background-color: #1F1F1F;
     color: white;
-    margin-block: 10px;
+    margin-block: 15px;
     padding-block: 10px; 
+
 }
 
 .mainServices{
@@ -45,13 +48,15 @@ main h1{
     background-color: #2a2a2a;
     padding: 20px;
     color: white;
+    padding-top: 100px;
 }
 
 .mainContent{
     grid-column: 1; 
     background-color: #4f4f4f;
-    padding: 15px;
     font-size: small;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .mainAside{
     grid-column: 2; 
@@ -60,9 +65,7 @@ main h1{
     font-size: medium;
 }
 
-.asideTitle{
-    margin-bottom: 40px;
-}
+
 
 .asideContent{
     display: grid;
@@ -104,8 +107,14 @@ main h1{
     margin-block: 20px;
 }
 
+header{
+    position: fixed;
+    min-width: 100vw;
+    height: 50px;
+}
+
 nav {
-    padding: 32px 32px;
+    padding: 16px 32px;
     min-height: 80px;
     background-color: #1F1F1F;
 }
@@ -205,4 +214,48 @@ footer{
 .copyFooter{
 margin-top: 20px;
 font-size: 10px;
+}
+
+/* Services dropdown menu */
+
+#services-li{
+    position: relative;
+}
+
+#services-li:hover #services-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+}
+
+#services-menu{
+    background-color: #1F1F1F;
+    position: absolute;
+    top: 105%;
+    left: 0px;
+    margin-bottom: 0px;
+    padding: 4px 16px;
+    z-index: 1;
+    transform: translateY(-2vh);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.15s;
+    border-radius: 5%;
+    
+}
+#services-menu li{
+    margin-right: 0px;
+    padding: 4px 0px;
+}
+
+#services-menu a{
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+footer{
+    height: 40px;
+
 }

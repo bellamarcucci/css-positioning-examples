@@ -15,12 +15,11 @@ html{
 }
 
 .parentBox{
-    display: block;
+
     width: 100%;
     font-family: Arial, sans-serif, Helvetica;
     color: #222;
     line-height: 1.5;
-    padding-bottom: 50px;
 }
 
 main{
@@ -38,44 +37,60 @@ main{
 main h1{
     background-color: #1F1F1F;
     color: white;
-    margin-block: 15px;
-    padding-block: 10px;
     border-radius: 4px; 
+    padding-block: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 
 }
 
 .mainServices{
     display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); /* Content, sidebar*/
-    gap: 20px;
-    background-color: #2a2a2a;
-    padding: 20px;
     color: white;
     padding-top: 100px;
-    border-radius: 4px;
 }
 
 .mainContent{
     grid-column: 1; 
-    background-color: #4f4f4f;
-    font-size: small;
-    padding-left: 15px;
-    padding-right: 15px;
+    background-color: #444;
+    padding: 20px;
+    color: white;
     border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.mainAbout{
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.mainContact{
+    background-color: #444;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .mainAside{
     grid-column: 2; 
-    background-color: #4f4f4f;
-    padding: 15px;
-    font-size: medium;
-    border-radius: 4px;
+    padding-right: 10px;
+    padding-left: 30px;
+    position: sticky;
+    top: 50px;
+    z-index: 0;
 }
 
-.asideContent{
-    display: grid;
-    font-size: medium;
+.mainAsideContent{
+    background-color:#1F1F1F;
+    font-size: small;
+    border-radius: 4px;
+    text-align: center;
 }
+
 
 #asideGardening{
     margin-top: 50px;
@@ -105,11 +120,12 @@ main h1{
     
 }
 
-.mainTitle img{
+
+.mainContent img{
     height: 200px;
     width: 100%;
     object-fit: cover;
-    margin-block: 20px;
+    margin-block: 5px;
     border-radius: 4px;
 }
 
@@ -117,6 +133,7 @@ header{
     position: fixed;
     min-width: 100vw;
     height: 50px;
+    z-index: 100;
 }
 
 nav {
@@ -175,10 +192,9 @@ nav img {
 }
 
 .spacer {
-    /*border: 1px solid yellow;*/
     display: inline-block;
-    /*Parent widtj - Logo width - menu <ul> width with no margin in the last child*/
-    width: calc(100% - 40px - 268px);
+    /*Parent width - Logo width - menu <ul> width with no margin in the last child*/
+    width: calc(100% - 50px - 250px);
 }
 
 nav ul {

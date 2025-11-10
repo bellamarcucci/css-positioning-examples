@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 110px;
 }
 
 .pageLayout{
@@ -48,6 +49,8 @@ main h1{
     display: grid;
     color: white;
     padding-top: 100px;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 20px;
 }
 
 .mainContent{
@@ -79,13 +82,20 @@ main h1{
     grid-column: 2; 
     padding-right: 10px;
     padding-left: 30px;
+    align-items: start;
+    
+}
+
+.mainAside > aside{
     position: sticky;
-    top: 50px;
-    z-index: 0;
+    position: -webkit-sticky;
+    top: 110px;
+    z-index: 1;
+    
 }
 
 .mainAsideContent{
-    background-color:#1F1F1F;
+    background-color:#280e0e;
     font-size: small;
     border-radius: 4px;
     text-align: center;
@@ -138,7 +148,7 @@ header{
 
 nav {
     padding: 16px 32px;
-    min-height: 80px;
+    min-height: 50px;
     background-color: #1F1F1F;
 }
 
